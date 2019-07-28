@@ -1,0 +1,253 @@
+/* styling for computer and desktop platform  */
+*{
+  padding: 0px;
+  margin: 0px;
+  /* background-color: blue; */
+  font-family: 'Noto Sans JP', sans-serif;
+}
+body{
+
+}
+#bar_icon{
+  display: none;
+}
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .first_nav {
+    float: left;
+    font-size: 20px;
+  }
+
+  .first_nav  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  .first_nav a:hover {
+    background-color: #333;
+    transform: translateY(-5px);
+    color: green;
+    text-decoration: none;
+  }
+  .medium1-circle {
+    position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	z-index: -1;
+  	opacity: 0.5;
+  	height: 70%;
+  }
+
+
+#logo{
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+h1{
+  margin-left: 20%;
+  font-size: 60px;
+  animation: heading1 2s ease;
+}
+#profile_image{
+  display: flex;
+  margin-left: 1185px;
+  margin-top: 50px;
+  height: 500px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.image_row_1, .image_row_2{
+  margin-left: 7%;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 3px;
+  animation: drop 1.5s ease;
+}
+
+/* icon navbar styling */
+.icon_navs, #icon_nav{
+  float: left;
+  font-size: 20px;
+  padding: 0 10px;
+}
+ #icon_nav{
+   margin-left: 25%;
+ }
+ .icon_navs{
+   margin-left: 30%;
+ }
+
+/* to put the gap between images and social icons*/
+p{
+  margin-top: 75%;
+}
+.social_navs{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+.fa:hover {
+opacity: 0.5;
+transform: translateY(-5px);
+}
+
+.last_nav_links{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.last_links{
+  float: left;
+}
+.last_links a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+.last_links a:hover {
+  transform: translateY(-5px);
+  color: green;
+  text-decoration: none;
+}
+.last_nav_links{
+  border: 1px solid black;
+  background-color: #333;
+}
+/* hamburger menu coading  */
+
+.side_nav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  list-style-type: none;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.2s;
+}
+.side_nav .btn-close{
+  position: absolute;
+  text-decoration: none;
+  font-size: 36px;
+  right: 15px;
+  color: white;
+  margin-left: 50px;
+}
+
+/* The animation code */
+@keyframes drop {
+  0%{
+    opacity: 0;
+    transform: translatey(-80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translatey(0px;);
+  }
+}
+@keyframes heading1 {
+  0%{
+    color: red;
+  }
+  50%{
+    color: purple;
+  }
+  100%{
+    color: black;
+  }
+}
+
+
+
+
+
+
+
+/* styling for moblie and small devices */
+
+@media screen and (max-width: 480px) {
+  h1{
+    color: black;
+    font-size: 15px;
+  }
+  .column {
+    float: initial;
+    width: initial;
+    padding: 5px;
+    margin-right: 25px;
+  }
+  #bar_nav{
+    display: none;
+  }
+  #bar_icon{
+    display: block;
+    height: 40px;
+    width: 40;
+  }
+  #home_icon{
+    float: left;
+    margin-left: 0%;
+
+  }
+  .medium1-circle{
+    display: none;
+  }
+  p{
+    margin-top: 5%;
+  }
+  .fa{
+    font-size: 20px;
+    text-align: center;
+  }
+  #icon_nav{
+    margin-left: -2px;
+    margin-top: -20px;
+    height: 50px;
+  }
+  .last_nav_links{
+    margin-left: 25%;
+    font-size: 12px;
+    width: 50%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+  h1{
+    font-size: 12px;
+  }
+
+}

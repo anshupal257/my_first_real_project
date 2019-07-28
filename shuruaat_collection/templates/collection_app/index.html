@@ -1,0 +1,103 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SURUAAT COLLECTION</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- social media icons as well as general icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css\my_style.css" %}"/>
+  </head>
+  <body>
+    <header>
+      <nav>
+				<ul class="nav-links">
+          <li id="bar_icon"class="first_nav"><a class="fa fa-bars" href="#" onclick="openSlidemenu()"></a> </li>
+					<li id="bar_nav"class="first_nav"><a class="nav-link" href="#">Products link</a></li>
+          <li id="bar_nav"class="first_nav"><a class="nav-link" href="#">Message</a> </li>
+					<li id="bar_nav"class="first_nav"><a class="nav-link" href="#">Faculty</a></li>
+          <li id="bar_nav"class="first_nav"><a class="nav-link" href="#">Updates</a> </li>
+          <li id="bar_nav"class="first_nav"><a class="nav-link" href="#">Gallery</a> </li>
+					<li id="bar_nav"class="first_nav"><a class="nav-link" href="#">Contact</a></li>
+          <li id="home_icon"class="icon_navs first_nav"><a class="fa fa-home"href="#"></a> </li>
+        </ul>
+			</nav>
+      <div class="side_nav" id="side_menu">
+        <a href="#" class="btn-close" onclick="closeSlidemenu()">&times;</a>
+        <li class="first_nav"><a class="nav-link" href="#">Products link</a></li>
+        <li class="first_nav"><a class="nav-link" href="#">Message</a> </li>
+        <li class="first_nav"><a class="nav-link" href="#">Faculty</a></li>
+        <li class="first_nav"><a class="nav-link" href="#">Updates</a> </li>
+        <li class="first_nav"><a class="nav-link" href="#">Gallery</a> </li>
+        <li class="first_nav"><a class="nav-link" href="#">Contact</a></li>
+      </div>
+    </header>
+    <div class="main_class">
+      <div class="heading_image">
+        <img id="logo" src="{% static "images/panya.jpg" %}" alt="Image could not load">
+        <h1>SHURUAAT COLLECTION PVT. LTD.</h1>
+      </div>
+    </div>
+
+    <div class="image_row_1">
+      <div class="column">
+        <img style="width:100%; height:400px;"src="{% static "images/image1.jpg" %}" alt="Image could not load">
+      </div>
+      <div class="column">
+        <img style="width:100%; height:400px;"src="{% static "images/IMG-20190726-WA0011 (1).jpg" %}" alt="Image could not load">
+      </div>
+      <div class="column">
+        <img style="width:100%; height:400px;"src="{% static "images/IMG-20190726-WA0016 (1).jpg" %}" alt="image could not load">
+      </div>
+
+    </div>
+    <div class="image_row_2">
+          <div class="column">
+            <img style="width:100%; height:400px; "src="{% static "images/IMG-20190726-WA0000 (1) - Copy.jpg" %}" alt="Image could not load">
+          </div>
+          <div class="column">
+            <img style="width:100%; height:400px;"src="{% static "images/IMG-20190726-WA0003 (1).jpg" %}" alt="Image could not load">
+          </div>
+          <div class="column">
+            <img style="width:100%; height:400px;"src="{% static "images/IMG-20190726-WA0023 (1).jpg" %}" alt="image could not load">
+        </div>
+    </div>
+    <img class="medium1-circle" src="{% static "images/download1.png" %}" alt="" />
+    <main class="border">
+      <div class="container">
+        <p></p>
+        <nav class="social_navs">
+          <ul class="nav-links">
+            <li class="first_nav" id="icon_nav" ><a class="fa fa-facebook" href="https://m.facebook.com/story.php?story_fbid=461140088059797&id=350432229130584"></a></li>
+            <li class="first_nav" id="icon_nav" ><a class="fa fa-instagram" href="https://www.instagram.com/panyaitssoorganic/"></a></li>
+          </ul>
+        </nav>
+        <br>
+        <br>
+        <nav>
+          <ul class="last_nav_links">
+            <div class="end_links_1">
+              <li class="last_links"> <a href="#">FAQ'S</a> </li>
+              <li class="last_links"> <a href="#">Contact us</a> </li>
+              <li class="last_links"> <a href="#">About us</a> </li>
+              <li class="last_links"> <a style="margin-left:-10px;" href="#">Terms and conditions</a> </li>
+              <li class="last_links"> <a href="#">Admin login</a> </li>
+            </div>
+          </ul>
+        </nav>
+
+      </div>
+    </main>
+    <script>
+        function openSlidemenu() {
+          document.getElementById('side_menu').style.width='250px';
+        }
+        function closeSlidemenu() {
+          document.getElementById('side_menu').style.width='0px';
+        }
+    </script>
+  </body>
+</html>
